@@ -1,0 +1,17 @@
+perlrdf-spec
+============
+
+This git repository contains the Fedora spec file for the perl libraries:
+- RDF-Trine: http://search.cpan.org/~gwilliams/RDF-Trine-0.138/lib/RDF/Trine.pm
+- RDF-Query: http://search.cpan.org/~gwilliams/RDF-Query-2.908/lib/RDF/Query.pm
+and their dependencies which are not already in Fedora:
+- perl-Algorithm-Combinatorics
+- perl-Bloom-Filter
+- perl-Cache-LRU
+- perl-DBIx-Connector
+- perl-Geo-Distance
+- perl-Redis
+- perl-XML-CommonNS
+- perl-XML-NamespaceFactory
+- perl-XML-Namespace
+
