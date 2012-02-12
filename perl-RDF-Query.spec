@@ -51,6 +51,16 @@ Requires:       perl(Set::Scalar)
 Requires:       perl(URI) >= 1.52
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 
+# RPM 4.8 style:
+%{?filter_setup:
+%filter_from_requires /perl([backend
+}
+%{?perl_default_filter}
+
+# RPM 4.9 style:
+%global __requires_exclude %__requires_exclude|^perl\\(\\[backend\\]\\)
+
+
 %description
 RDF::Query allows SPARQL and RDQL queries to be run against an RDF model,
 returning rows of matching results.
